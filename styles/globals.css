@@ -1,0 +1,623 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+/* hyper link css  */
+
+
+a{
+  text-decoration: none !important;
+  color: rgb(186, 179, 179) !important;
+  font-weight: normal !important;
+  padding-top: 9px;
+}
+
+
+
+body{
+  background-color: rgba(187, 187, 235, 0.898);
+}
+.global__container{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.header__container{
+width: 100%;
+height: 50px;
+position: relative;
+}
+
+
+#header__poster{
+  position: absolute;
+  top: 50px;
+  height: 100v;
+  overflow: scroll;
+  display:none;
+  width: 100%;
+
+}
+
+/* popu enquiry form  */
+#FormSubmitForm{
+
+color: rgb(5, 5, 5);
+font-size: 17px;
+transition: all , 0.7s ease-in-out;
+width: 60%;
+background-color: rgb(157, 231, 240);
+position: absolute;
+z-index: 90000;
+margin-left: 20%;
+margin-right: 20%;
+text-align: center;
+
+
+display: none;
+height: 50px;
+
+
+line-height: 50px;
+
+
+}
+
+
+
+/* footer part css  all about the footer */
+
+.containerFooter{
+  margin-top: 10px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 8px;
+  padding-bottom: 5px;
+background-color: black;
+color: white;
+}
+.footerStrongPart{
+  display: flex;
+  flex-direction: row;
+}
+.title__footer{
+  color: #ccc;
+  padding-top: 10px;
+    font-family: Prata,serif;
+    margin-bottom: 15px;
+    letter-spacing: 1.31px;
+  flex: 25%;
+ 
+  font-weight: 340px;
+  font-size: 14px;
+  
+}
+
+.linkHolder__container{
+  display: flex;
+  flex-direction: row;
+}
+.linkHolder__block{
+  flex: 25%;
+
+padding-right: 10px;
+padding-left: 10px;
+font-size: .9085714285714285em;
+  line-height: 1.4076923076923077em;
+color: #949292;
+font-weight: 300;
+letter-spacing: .3px;
+margin-bottom: 5px;
+}
+.split__inner__link{
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-indicators{
+  display: none !important;
+}
+.split__block{
+  flex: 50%;
+  font-size: .9085714285714285em;
+  line-height: 1.4076923076923077em;
+  color: #949292;
+  font-weight: 300;
+  letter-spacing: .3px;
+  margin-bottom: 5px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+/* footer email newsletter */
+.footer__form{
+  padding-left: 5%;
+  padding-right: 5%;
+  
+
+}
+
+.footer__email_box{
+  height: 34px;
+  margin: 0 0 10px;
+  width: 100%;
+  font-size: 12px;
+  padding: 6px 10px;
+  background-color: #2b2b2b;
+  border: 0;
+  letter-spacing: .6px;
+  outline: 0;
+  border-radius: 2px;
+  color: #fff;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.footer_email__submit{
+
+  margin-top: 8px;
+  width: 100px;
+  border: none;
+  border-radius: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 1px skyblue;
+  box-shadow: 0 0 1px skyblue;
+  -webkit-transition: all ,0.3s ease-in-out;
+  -moz-transition: all ,0.3s ease-in-out;
+  transition: all ,0.3s ease-in-out;
+  background-image: -webkit-gradient(linear , left bottom, left top , from(rgb(104, 151, 198)) , to(#0e9ee6));
+  background-image: -moz-linear-gradient(bottom , rgb(104, 151, 198) , #0e9ee6);
+  background-image: linear-gradient(to top , rgb(104, 151, 198) , #0e9ee6);
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 10px;
+}
+.footer_email__submit:hover{
+  background-image: linear-gradient(to top , #0e9ee6, rgb(104, 151, 198) );
+
+
+}
+/* copy right section css */
+
+.copy__right_container{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 9px;
+  padding-bottom: 5px;
+  border-top: 1px solid #939191b1;
+  display: flex;
+  font-size: .85085714285714285em;
+  line-height: 1.4076923076923077em;
+  font-weight: bold;
+color: #949292;
+font-weight: 300;
+  flex-direction: row;
+}
+#copy__right_block{
+  float: right;
+  text-align: right;
+}
+.copy__right_block{
+  flex: 50px;
+  
+}
+.footer__social__icon__container{
+  text-align: center;
+
+  padding-left: 5px;
+}
+.footer__socila__icon{
+  padding-top: 12px;
+}
+
+
+
+
+/*  Form.js css in tis table right now   */
+/*  that is inquiry form css  ========== */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none ;
+  overflow: hidden;
+  outline: 0;
+}
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+.modal-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem;
+  /* border-top: 10px solid #ffde01; */
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  background: #fff;
+}
+
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 40%;
+
+  border-radius: 2px;
+  float:right;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+/* Background styles */
+
+/* Glassmorphism card effect */
+
+
+  border-radius: 2px;
+  padding: 5px 5px 5px 5px;
+  height:98vh !important;
+  outline: 0;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  pointer-events: none;
+  bottom: 0;
+  top: 0;
+  right: 0;
+}
+
+
+#inqueryFormContainer{
+display: none;
+}
+#sendenquiry{
+  position: fixed;
+  display: none  ;
+  width: 100%;
+  height: 100vh;
+
+  z-index: 4;
+ 
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.6);
+ 
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+
+
+}
+
+.log-in{
+  
+}
+
+.close{
+  border: none;
+  padding-top: 5px;
+  border-radius: 2px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.close:hover{
+
+background-color: rgb(236, 230, 230);
+
+
+}
+
+.form-control{
+
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  outline: none;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 2rem !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:hover{
+  border:1px solid rgb(104, 104, 240);
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+.text-muted{
+  font-size: 12px;
+  color:rgb(159, 159, 159);
+  margin-bottom: 10px;
+  padding-left:5px;
+}
+.log-in{
+  display: inline-block;
+  font-weight: 400;
+  width: 100%;
+  border-radius: 2rem !important;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  text-transform:uppercase;
+  background-image: linear-gradient(to top , #0e9ee6, rgb(104, 151, 198) );
+
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 2rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+/* products css in products page */
+.products_floating_page_products{
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: row;
+
+}
+
+.selected__active{
+  color: red ;
+  font-weight: bolder ;
+
+
+}
+.filter__button{
+  flex: 20%;
+
+}
+.productsPage_container{
+  flex: 80%;
+}
+
+
+
+.productsPage_card{
+
+width: 30.3%;
+height: 340px;
+object-fit: contain;
+float: left;
+  margin-left: 1.5%;
+
+  margin-right: 1.5%;
+  
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ 
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.productsPage_card:hover{
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ 
+
+}
+
+.productsPage_section>h3{
+  font-size: 17px;
+}
+.productsPage_section>p{
+
+  font-size: 16px;
+
+}
+
+
+.buttonForiquiery{
+  
+ 
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: rgb(60, 66, 87);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 8px;
+
+  min-height: 28px;
+  transition: background-color .24s,box-shadow .24s;
+text-align: center;
+width: 100%;
+
+  
+}
+.buttonForiquiery :hover{
+  
+  box-shadow: inset 0 0 5px #c0c0c0;
+
+}
+
+.filter__button button{
+  
+
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+  border: 1px solid #cbd5e0;
+  line-height: 26px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+width: 100%;
+margin-top: 5px;
+
+text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+
+
+/*  responsive of this footer */
+
+@media only screen and (max-width:600px) {
+
+  /* yper link css in small type devices */
+  a{
+    text-decoration: none !important;
+    color: rgb(186, 179, 179) !important;
+    font-weight: normal !important;
+    padding-top: 0px;
+  }
+
+
+
+.containerFooter{
+  padding-left: 4%;
+  padding-right: 4%;
+  
+}
+
+.footerStrongPart{
+  display: flex;
+  flex-direction: column;
+}
+
+.title__footer{
+
+  flex: 100%;
+
+  
+}
+
+.linkHolder__container{
+  display: flex;
+  flex-direction: column;
+}
+
+.linkHolder__block{
+  flex: 100%;
+}
+
+/* ======= enquiry form csss */
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 98%;
+  margin-left:1%;
+  margin-right:1%;
+
+  border-radius: 2px;
+  float:none;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+
+
+  border-radius: 2px;
+  padding: 5px 5px 5px 5px;
+  height:98vh !important;
+  outline: 0;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  pointer-events: none;
+  bottom: 0;
+  top: 0;
+  right: 0;
+}
+  
+}
+
+
+
+/* whatsapp and phone number icon */
+#iconHolder__communication{
+  position: fixed;
+  right: 8px;
+ 
+  bottom: 8px;
+}
+.animate__bounceIn{
+  color: white;
+ 
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  opacity: 0.9;
+  margin-bottom: 5px;
+  transition:  all , 0.4s ease-in-out;
+}
+.whatsapp_number{
+  
+
+  background-color: rgb(14, 189, 14);
+
+}
+
+.location__icon{
+  background-color: rgba(255, 255, 0, 0.632);
+}
+.contact__us{
+ 
+ 
+
+  background-color: rgb(6, 134, 247);
+  
+
+}
+
+.animate__bounceIn:hover{
+  transform: scale(1.09);
+}
+
+
+
+
+
+/*  mulitpleCarousel css  */
+.mulitpleCarousel{
+  height: 400px;
+}
